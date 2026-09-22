@@ -10,7 +10,6 @@ html{
 }
 
 body{
-    /* font-family: Georgia, 'Times New Romand', Times, serif; */
     font-size: 16px;
     color:#3D5D91;
     background-color: #F2DCDB;
@@ -22,7 +21,6 @@ body{
 h1{
     text-align: left;
     color:#3D5D91;
-    /* margin: 16px; */
 }
 
 /* TEKS */
@@ -47,12 +45,11 @@ h1{
 
 .logo-text span { 
     color:#5A86CB; 
-    /* padding: 24px;; */
     margin-top: 2px;
 }
 
 .logo-img{
-    /* font-family: "Garamond", Times, serif; */
+    font-family: "Garamond", Times, serif;
     max-width: 200px;
     height: auto;
     margin: 0 auto 0;
@@ -123,8 +120,6 @@ img{
 }
 
 .hero-section{
-    /* padding: 10px; */
-    /* background: white; */
     margin: auto;
     text-align: center;
 }
@@ -138,8 +133,6 @@ img{
 .hero-section img{
         display: flex;
         justify-content: center;
-        /* border-radius: 20px; */
-        /* border: 5px black solid; */
     }
 
 @media (min-width: 600px){
