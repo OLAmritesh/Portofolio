@@ -11,16 +11,16 @@
     <!-- HEADER -->
     <header class="navbar" id="navbar">
         <div class="nav-inner">
-            <a href="#home" class="logo">
-                <span class="logo-name">Olaf </span>
-                <span class="logo-text"> Portofolio</span>
-            </a>
+            <p href="#home" class="logo">
+                <span class="logo-name">Olaf Portofolio</span>
+            </p>
 
-            <nav class="nav" id="nav" aria-label="Menu Utama">
+            <nav class="nav" id="nav">
                 <ul class="nav-list">
-                    <li><a href="#home" class="nav-links-active">Home</a></li>
-                    <li><a href="#about" class="nav-links-active">About</a></li>
-                    <li><a href="#skills" class="nav-links-active">Skills</a></li>
+                    <li><a href="#home" class="nav-links" data-nav="home">Home</a></li>
+                    <li><a href="#about" class="nav-links" data-nav="about">About</a></li>
+                    <li><a href="#skills" class="nav-links" data-nav="skills">Skill</a></li>
+                    <li><a href="#contact" class="nav-links" data-nav="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,20 +35,141 @@
                 <div class="logo-text">
                     Febiola Safira,<span class="logo-text-hero">Frontend Developer.</span>
                 </div>
-                <p>Let's to cook </p>
+                <p>Coding itu seru, apalagi kalau bareng akuuuu.</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/febiola-safira" target="_blank" class="social-link">
+                    <img src="pict/logoLinkedin.png" viewBox="0 0 24 24" width="24" height="24">
+                </a>
+                <a href="https://github.com/OLAmritesh" target="_blank" class="social-link">
+                    <img src="pict/LogoGithub.png" viewBox="0 0 24 24" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com/f_ebiola?igsh=MWd5ajB1c2d6amRqdQ==" target="_blank" class="social-link">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI6m4envkNDxalMSDXvlg7dgdpRh-Kb-146QSf4Ej5hg&s" width="24" height="24">
+                </a>
             </div>
         </section>
 
         <!-- About -->
         <section class="hero-section" id="about">
-            <p>ABOUT</p>
-            <div class="logo-section">
-            </div class="">
-
-                <div class="card"></div>
+            <h2 class="section-title">ABOUT</h2>
+            <h1 class="logo-name">WE CARRY THE BURDEN TO BE RESOLVED</h1>
+            <p class="about">Hawo hawooo! I'm Ola, a Frontend Developer based in Jember. Right now, I'm diving deeper into modern web technologies and leveling up my UI/UX design skills.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title">University</h3>
+                    <div class="card-body">
+                        <img src="pict/Logo Baku UNEJ 2020 Small Res.png" class="card-img">
+                        <p class="card-text">Information Technology, Universitas Jember</p>
+                    </div>
+                    </div>
+                <div class="card">
+                    <h3 class="card-title">Coding Since</h3>
+                    <p class="card-text">Started my coding journey in August 2025, and never looked back.</p>
+                    <img src="pict/logoFasilkom.png" class="card-img">
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Life In</h3>
+                    <div class="card-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5lq-6iH08wwHlTsEwj26riHHbbTQrH-UbEdxFEPejVhzRtjrIRjglLp0&s=10" class="card-img">
+                        <p class="card-text">Based in Jember, Indonesia. Future life in Finland. Praying and working hard to make it happen.</p>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- Skills -->
+        <section class="hero-section" id="skills">
+            <h2 class="logo-name">My Skill</h2>
+            <p class="about">Coding? Check. Designing? Double check. Making your website look effortlessly gorgeous? That's my love language. Alah alah saya boong, saya ga suka ngoding"</p>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="pict/pusing.png" class="img">
+                    <h3 class="card-title">Ngoding</h3>
+                    <p class="card-text">Writing clean code with a touch of love. HTML, CSS, and JavaScript are my daily vitamins. Making websites that work well and look great? Tapi Boong, nda nda:/</p>
+                </div>
+                <div class="card">
+                    <img src="pict/design.png" class="img">
+                    <h3 class="card-title">Design</h3>
+                    <p class="card-text">Figma is my playground. I design with love, aesthetics, and a little drama,drama kepala pusing wkwkwkwk. Making things beautiful is not just a hobby it is a way of life, honey.</p>
+                </div>
+                <div class="card">
+                    <img src="pict/tariTradisional.png" class="img">
+                    <h3 class="card-title">Dance Traditional</h3>
+                    <p class="card-text">When I am not writing code, I am dancing traditional moves, modern soul style. It helps relieve stress when I am coding or working on assignments.</p>
+                </div>
+            </div>
+        </section>
+        </main>
+
+        <!-- Contact -->
+        <section class="hero-section" id="contact">
+            <h2 class="logo-name">Contact</h2>
+            <p class="about">Ada proyek atau ide kolaborasi? Kirim pesan, aku fast respon kok.</p>
+
+            <div class="card-grid">
+                <div class="card" style="background-color: #f2aebc;" width:auto; padding:20px 28px;>
+                    <p class="about">Coba di klik</p>
+                    <div class="social-links" style="margin-top: 8px;">
+                        <button class="social-link" data-emoji="♡" style="box-shadow: none;">♡</button>
+                    </div>
+                    <p class="card-text" id="reactionCount" style="margin-top: 10px;"></p>
+                </div>
+                <div class="card">
+                    <h3 class="card-text">Connect</h3>
+                    <a href="https://www.linkedin.com/in/febiola-safira" target="_blank" class="card-tittle">LinkedIn</a>
+                </div>
+                <div class="card">
+                    <h3 class="card-text">Email</h3>
+                    <button class="card-tittle copy-email-btn-inline" data-email="febiolasafira721@gmail.com" style="border:none;background:none;cursor:pointer;font:inherit;">
+                        febiolasafira721@gmail.com
+                    </button>
+                </div>
+            </div>
+
+            <div class="say-hi-panel" id="sayHiPanel">
+                <p class="say-hi-text">Hai! Ada ide proyek atau cuma mau say hi?</p>
+                <a href="wa.me/628137060816" target="_blank" class="copy-email-btn" style="display:block;text-align:center;">
+                    Chat via WhatsApp
+                </a>
+                <div class="say-hi-social">
+                    <a href="https://www.linkedin.com/in/febiola-safira" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/OLAmritesh" target="_blank">GitHub</a>
+                    <a href="https://www.instagram.com/f_ebiola?igsh=MWd5ajB1c2d6amRqdQ==" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </section>  
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-about">
+                <h3 class="footer-title">Febiola Safira</h3>
+                <p class="footer-text">Frontend Developer yang suka bikin tampilan website rapi dan enak dipakai.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-heading">Menu</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-heading">Connect</h4>
+                <a href="https://www.linkedin.com/in/febiola-safira" target="_blank">LinkedIn</a>
+                <a href="https://github.com/OLAmritesh" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/f_ebiola?igsh=MWd5ajB1c2d6amRqdQ==" target="_blank">Instagram</a>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2026 Febiola Safira. All rights reserved.</p>
+    </footer>
+    
+    <button class="say-hi say-hi-trigger" id="sayHi">Hi</button>
 
     <script src="./script.js"></script>
 </body>
