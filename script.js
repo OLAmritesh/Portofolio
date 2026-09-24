@@ -1,6 +1,3 @@
-// ================================
-// 1. Scroll-spy: ganti warna menu aktif
-// ================================
 const navLinks = document.querySelectorAll(".nav-links");
 const sections = document.querySelectorAll("main section[id]");
 
@@ -8,7 +5,7 @@ function setActiveLink() {
     let currentId = sections[0]?.id;
 
     sections.forEach((section) => {
-        const top = section.offsetTop - 64;
+        const top = section.offsetTop - 110;
         if (window.scrollY >= top) {
             currentId = section.id;
         }
@@ -22,9 +19,6 @@ function setActiveLink() {
 window.addEventListener("scroll", setActiveLink);
 window.addEventListener("load", setActiveLink);
 
-// ================================
-// 2. Navbar: bayangan lebih tebal saat di-scroll
-// ================================
 const navbar = document.getElementById("navbar");
 
 function handleNavbarShadow() {
@@ -38,9 +32,6 @@ function handleNavbarShadow() {
 window.addEventListener("scroll", handleNavbarShadow);
 handleNavbarShadow();
 
-// ================================
-// 3. Validasi form Contact sederhana
-// ================================
 const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
 
@@ -64,9 +55,6 @@ if (contactForm) {
     });
 }
 
-// ================================
-// 4. Tombol "Say Hi" (dari 2 tombol: floating & di Contact)
-// ================================
 const sayHiTriggers = document.querySelectorAll(".say-hi-trigger");
 const sayHiPanel = document.getElementById("sayHiPanel");
 
@@ -83,16 +71,13 @@ document.addEventListener("click", (e) => {
     }
 });
 
-// ================================
-// 5. Tombol reaksi emoji (About) — pakai class .social-link yang sudah ada
-// ================================
 const reactionButtons = document.querySelectorAll(".social-links .social-link[data-emoji]");
 const reactionCountEl = document.getElementById("reactionCount");
 
 function updateReactionCount() {
     const count = Number(localStorage.getItem("reactionCount") || 0);
     if (reactionCountEl) {
-        reactionCountEl.textContent = count > 0 ? `${count}x direaksi` : "";
+        reactionCountEl.textContent = count > 0 ? `${count} reaction` : "";
     }
 }
 
@@ -109,3 +94,19 @@ reactionButtons.forEach((btn) => {
 });
 
 updateReactionCount();
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav");
+
+if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+        const isOpen = navMenu.classList.toggle("is-open");
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navMenu.querySelectorAll(".nav-links").forEach((link) => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("is-open");
+        });
+    });
+}

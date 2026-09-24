@@ -23,6 +23,8 @@
                     <li><a href="#contact" class="nav-links" data-nav="contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <button class="hamburger" id="hamburger" aria-expanded="false">☰</button>
         </div>
     </header>
 
@@ -56,24 +58,35 @@
             <h2 class="section-title">ABOUT</h2>
             <h1 class="logo-name">WE CARRY THE BURDEN TO BE RESOLVED</h1>
             <p class="about">Hawo hawooo! I'm Ola, a Frontend Developer based in Jember. Right now, I'm diving deeper into modern web technologies and leveling up my UI/UX design skills.</p>
+            
             <div class="card-grid">
                 <div class="card">
                     <h3 class="card-title">University</h3>
                     <div class="card-body">
-                        <img src="pict/Logo Baku UNEJ 2020 Small Res.png" class="card-img">
+                        <span class="social-link" style="width: 56px; height: 56px; box-shadow: none; flex-shrink: 0;">
+                            <img src="pict/Logo Baku UNEJ 2020 Small Res.png" class="card-img" style="width:36px; height:36px; margin:0;">
+                        </span>
                         <p class="card-text">Information Technology, Universitas Jember</p>
                     </div>
-                    </div>
+                </div>
+
                 <div class="card">
                     <h3 class="card-title">Coding Since</h3>
-                    <p class="card-text">Started my coding journey in August 2025, and never looked back.</p>
-                    <img src="pict/logoFasilkom.png" class="card-img">
+                    <div class="card-body">
+                        <span class="social-link" style="width:56px; height:56px; box-shadow:none; flex-shrink: 0;">
+                            <img src="pict/code.png" class="card-img">
+                        </span>
+                        <p class="card-text">Started my coding journey in August 2025, and never looked back.</p>
+                    </div>
                 </div>
+
                 <div class="card">
                     <h3 class="card-title">Life In</h3>
                     <div class="card-body">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5lq-6iH08wwHlTsEwj26riHHbbTQrH-UbEdxFEPejVhzRtjrIRjglLp0&s=10" class="card-img">
-                        <p class="card-text">Based in Jember, Indonesia. Future life in Finland. Praying and working hard to make it happen.</p>
+                        <span class="social-link" style="width:56px; height:56px; box-shadow:none; flex-shrink: 0;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5lq-6iH08wwHlTsEwj26riHHbbTQrH-UbEdxFEPejVhzRtjrIRjglLp0&s=10" class="card-img" style="width:36px; height:36px; margin:0;">
+                        </span>
+                        <p class="card-text">Based in Jember, Future life in Islandia. Aaamiinnn doain yaaak</p>
                     </div>
                 </div>
             </div>
@@ -87,7 +100,7 @@
                 <div class="card">
                     <img src="pict/pusing.png" class="img">
                     <h3 class="card-title">Ngoding</h3>
-                    <p class="card-text">Writing clean code with a touch of love. HTML, CSS, and JavaScript are my daily vitamins. Making websites that work well and look great? Tapi Boong, nda nda:/</p>
+                    <p class="card-text">Writing clean code with a touch of love. HTML, CSS, and JavaScript are my daily vitamins. Making websites that work well and look great? Tapi Boong, hayuuuk pal paleee</p>
                 </div>
                 <div class="card">
                     <img src="pict/design.png" class="img">
@@ -101,7 +114,6 @@
                 </div>
             </div>
         </section>
-        </main>
 
         <!-- Contact -->
         <section class="hero-section" id="contact">
@@ -109,28 +121,30 @@
             <p class="about">Ada proyek atau ide kolaborasi? Kirim pesan, aku fast respon kok.</p>
 
             <div class="card-grid">
-                <div class="card" style="background-color: #f2aebc;" width:auto; padding:20px 28px;>
-                    <p class="about">Coba di klik</p>
+                <div class="card">
+                    <h3 class="card-title">Coba di klik</h3>
                     <div class="social-links" style="margin-top: 8px;">
                         <button class="social-link" data-emoji="♡" style="box-shadow: none;">♡</button>
                     </div>
                     <p class="card-text" id="reactionCount" style="margin-top: 10px;"></p>
                 </div>
+
                 <div class="card">
                     <h3 class="card-text">Connect</h3>
-                    <a href="https://www.linkedin.com/in/febiola-safira" target="_blank" class="card-tittle">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/febiola-safira" target="_blank" class="card-title">LinkedIn</a>
                 </div>
+
                 <div class="card">
                     <h3 class="card-text">Email</h3>
-                    <button class="card-tittle copy-email-btn-inline" data-email="febiolasafira721@gmail.com" style="border:none;background:none;cursor:pointer;font:inherit;">
+                    <button class="card-title" data-email="febiolasafira721@gmail.com" style="border: none; background: none; cursor: pointer; font-family: inherit; display: block; margin: 0 auto;">
                         febiolasafira721@gmail.com
                     </button>
                 </div>
             </div>
 
             <div class="say-hi-panel" id="sayHiPanel">
-                <p class="say-hi-text">Hai! Ada ide proyek atau cuma mau say hi?</p>
-                <a href="wa.me/628137060816" target="_blank" class="copy-email-btn" style="display:block;text-align:center;">
+                <p class="say-hi-text">Hawooo! Ada ide proyek atau cuma mau say hi?</p>
+                <a href="https://wa.me/628137060816" target="_blank" class="copy-email-btn" style="display: block;text-align: center;">
                     Chat via WhatsApp
                 </a>
                 <div class="say-hi-social">
@@ -166,7 +180,7 @@
             </div>
         </div>
 
-        <p class="footer-copy">© 2026 Febiola Safira. All rights reserved.</p>
+        <p class="footer-copy">© 2026, Febiola.</p>
     </footer>
     
     <button class="say-hi say-hi-trigger" id="sayHi">Hi</button>
